@@ -51,6 +51,7 @@ $potato = new Potato(POTATO_BOT_TOKEN, POTATO_BOT_USERNAME);
 ```
 
 频道&超级群组（channels & superGroups）
+注意 需要把提升机器人的权限，方可发布消息
 ```php
     $reqData = new \Jsyqw\PotatoBot\Requests\ReqSendMessage();
     $reqData->chat_type = \Jsyqw\PotatoBot\Types\ChatType::ChannelChat;
