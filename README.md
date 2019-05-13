@@ -40,10 +40,20 @@ $potato = new Potato(POTATO_BOT_TOKEN, POTATO_BOT_USERNAME);
     var_dump($ret);
 ```
 
-群组 (同理频道)
+群组 (groups)
 ```php
     $reqData = new \Jsyqw\PotatoBot\Requests\ReqSendMessage();
     $reqData->chat_type = \Jsyqw\PotatoBot\Types\ChatType::PeerChat;//群组
+    $reqData->chat_id = 10764236;
+    $reqData->text = date('Y-m-d H:i:s');
+    $ret = PotatoRequest::sendTextMessage($reqData);
+    var_dump($ret);
+```
+
+频道&超级群组（channels & superGroups）
+```php
+    $reqData = new \Jsyqw\PotatoBot\Requests\ReqSendMessage();
+    $reqData->chat_type = \Jsyqw\PotatoBot\Types\ChatType::ChannelChat;
     $reqData->chat_id = 10764236;
     $reqData->text = date('Y-m-d H:i:s');
     $ret = PotatoRequest::sendTextMessage($reqData);
