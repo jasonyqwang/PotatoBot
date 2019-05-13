@@ -9,6 +9,7 @@ use Jsyqw\PotatoBot\Potato;
 use Jsyqw\PotatoBot\PotatoRequest;
 //创建 potato 对象
 $potato = new Potato(POTATO_BOT_TOKEN, POTATO_BOT_USERNAME);
+PotatoRequest::initialize($potato);
 
 ## 发送消息
 //$reqData = new \Jsyqw\PotatoBot\Requests\ReqSendMessage();

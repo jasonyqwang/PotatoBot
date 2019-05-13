@@ -1,6 +1,5 @@
 # phpstorm project files
-.idea
+.idea/
 
+composer.lock
 vendor
-
-.gitignore
