@@ -10,7 +10,7 @@
 
     在 composer 中添加
     "require": {
-        "jsyqw/potato-bot": "dev-master"
+        "jsyqw/potato-bot": "^0.1"
     }
     
     composer update jsyqw/potato-bot
