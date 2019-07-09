@@ -17,7 +17,7 @@
     
     OR
     
-    composer require jsyqw/potato-bot:dev-master
+    composer require jsyqw/potato-bot:^0.1
     
 ## TODO 
        
